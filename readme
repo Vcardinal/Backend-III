@@ -1,0 +1,93 @@
+# 🐾 Backend III - API de Adopciones
+
+API REST desarrollada con Node.js, Express y MongoDB para la gestión de usuarios y adopciones de mascotas.
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+* Node.js
+* Express
+* MongoDB + Mongoose
+* Swagger (documentación)
+* Mocha + Chai + Supertest (testing)
+* Docker
+
+---
+
+## 📦 Instalación local
+
+```bash
+git clone https://github.com/TU_USUARIO/backend-iii.git
+cd backend-iii
+npm install
+npm run dev
+```
+
+---
+
+## ⚙️ Variables de entorno
+
+Crear un archivo `.env`:
+
+```env
+PORT=3000
+MONGO_URL=mongodb://127.0.0.1:27017/backend3
+SESSION_STORE=mongo
+SESSION_SECRET=unSecretoSuperSeguro123
+SESSION_TTLSECONDS=1800
+COOKIE_SECURE=false
+```
+
+---
+
+## 📚 Documentación Swagger
+
+Disponible en:
+
+👉 http://localhost:3000/api/docs
+
+---
+
+## 🧪 Tests
+
+```bash
+npm test
+```
+
+---
+
+## 🐳 Docker
+
+### Ejecutar con Docker Compose
+
+```bash
+docker compose up --build
+```
+
+### Imagen en Docker Hub
+
+👉 https://hub.docker.com/r/vcardinal/backend-iii
+
+---
+
+## 📌 Endpoints principales
+
+### Users
+
+* GET /api/users
+* GET /api/users/:id
+* POST /api/users
+
+### Adoptions
+
+* GET /api/adoptions
+* GET /api/adoptions/:id
+* POST /api/adoptions
+* DELETE /api/adoptions/:id
+
+---
+
+## 👩‍💻 Autor
+
+Verónica Cardinal
